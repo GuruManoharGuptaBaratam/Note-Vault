@@ -8,7 +8,10 @@ const User = require("./models/user")
 const Note = require("./models/Note")
 app.use(express.json())
 const port = 5003
-mongoose.connect("mongodb+srv://NotePad:XUURdRf12FYRCROe@notebookcluster.rg21j.mongodb.net/"
+mongoose.connect("mongodb+srv://NotePad:XUURdRf12FYRCROe@notebookcluster.rg21j.mongodb.net/",{
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    serverSelectionTimeoutMS: 50000 }
 )
 .then(() => console.log("MongoDB connected successfully! 🚀"))
 .catch((err) => console.error("MongoDB connection error:", err));
