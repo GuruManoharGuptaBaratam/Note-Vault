@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Vault - Secure Your Notes</title>
+    <link rel="icon" type="image/jpg" href="icon.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+        .navbar-brand{
+            font-family: "Yatra One", system-ui;
+        }
+    
+        body {
+            background-color: #6F4E37;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+        .navbar-brand{
+          font-size: 1.5rem;
+        }
+        .navbar-custom {
+            background-color: #536878;
+            border-radius: 50px;
+            padding: 10px 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            margin: 10px auto;
+            margin-bottom: 30px;
+        }
+
+        /* Navbar Text */
+        .navbar-brand, .nav-link {
+            color: #EAE0C8 !important;
+            font-weight: 600;
+        }
+
+        /* Button Styling */
+        .btn-custom {
+            background-color: #536878;
+            color:  #EAE0C8;
+            font-weight: 600;
+            border: none;
+            border-radius: 20px;
+            padding: 8px 16px;
+            transition: 0.3s;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-custom:hover {
+            background-color: #283b4a;
+            color: #EAE0C8;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: #EAE0C8 ;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            color: #536878;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .feature-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .feature-list li::before {
+            content: "✅";
+            margin-right: 10px;
+        }
+        .contact-info {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .contact-info a {
+            color: #536878;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <!-- Left Side: Branding & Navigation -->
+            <a class="navbar-brand ms-3" href="/">Note Vault</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                </ul>
+
+                <!-- Right Side: Login & Signup Buttons -->
+                <div class="ms-auto me-3">
+                    <a href="/login"><button class="btn btn-custom me-2">Login</button></a>
+                    <a href="/signup"><button class="btn btn-custom">Signup</button></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2>📌 About - Your Notes Application</h2>
+
+        <p>Welcome to <strong>Your Notes</strong>, your personal space for organizing and managing notes effortlessly! ✨</p>
+
+        <h4>📝 Features of Your Notes</h4>
+        <ul class="feature-list">
+            <li>Simple & Clean Interface – Easy-to-use design for quick note-taking.</li>
+            <li>Secure Authentication – Your notes are protected with login & signup authentication.</li>
+            <li>Cloud Storage – Notes are saved securely and accessible from anywhere.</li>
+            <li>Easy Management – Add, edit, and delete notes instantly.</li>
+            <li>Responsive Design – Works on all devices, from mobile to desktop.</li>
+            <li>Dark Mode Support – (Upcoming Feature!) A comfortable viewing experience.</li>
+        </ul>
+
+        <h4>🚀 How to Use?</h4>
+        <p><strong>1️⃣ Sign Up:</strong> Click on the <strong>Signup</strong> button in the navigation bar, enter your email and password, and create an account.</p>
+        <p><strong>2️⃣ Login:</strong> Click on the <strong>Login</strong> button, enter your email and password, and access your notes.</p>
+        <p><strong>3️⃣ Add a Note:</strong> Enter a <strong>title and description</strong> in the note fields and click <strong>Submit</strong>.</p>
+        <p><strong>4️⃣ Manage Notes:</strong> View your saved notes, and use the <strong>Delete</strong> button if needed.</p>
+
+        <div class="contact-info">
+            <h4>❓ Facing Issues? Contact Us!</h4>
+            <p>📧 Email: <a href="mailto:yourEmail@example.com">yourEmail@example.com</a></p>
+            <p>📞 Phone: <a href="tel:+1234567890">+1234567890</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
