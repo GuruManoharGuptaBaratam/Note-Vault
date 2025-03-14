@@ -9,23 +9,19 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
-        .text{
-            font-family: "Yatra One", system-ui;
-        }
-        .navbar-brand{
-            font-family: "Yatra One", system-ui;
-        }
+        
         body {
             background-color: #C2B280;
             color: #333;
             font-family: Arial, sans-serif;
         }
+        .navbar-brand,.name{
+            font-family: "Yatra One", system-ui;
+        }
         .navbar-brand{
-          font-size: 1.5rem;
-
+            font-size: 1.5rem;
         }
         .navbar-custom {
-            
             background-color: #536878;
             border-radius: 50px;
             padding: 10px 20px;
@@ -35,27 +31,34 @@
             margin-bottom: 30px;
         }
 
-        /* Navbar Text */
         .navbar-brand, .nav-link {
             text-align: center;
             color: #EAE0C8 !important;
             font-weight: 600;
         }
 
-  
+        .btn-custom {
+            background-color: #EAE0C8;
+            color: #536878;
+            font-weight: bold;
+            border-radius: 20px;
+            padding: 8px 20px;
+            border: none;
+        }
+
+        .btn-custom:hover {
+            background-color: #d8c9a7;
+        }
     </style>
 </head>
-<body >
+<body>
+
     <nav class="navbar navbar-expand-lg navbar-custom">
         <div class="container-fluid">
-            <!-- Left Side: Branding & Navigation -->
             <a class="navbar-brand ms-3" href="/">Note Vault</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-3">
+            <div id="navbarNav">
+                <ul class="navbar-nav ms-3 d-flex flex-row gap-4">
                     <li class="nav-item">
                         <a class="nav-link" href="/home">Home</a>
                     </li>
@@ -63,31 +66,22 @@
                         <a class="nav-link" href="/about">About</a>
                     </li>
                 </ul>
-
-                <!-- Right Side: Login & Signup Buttons -->
-                <div class=" ms-auto me-3">
-                    <a href="/login"><button class="btn btn-custom me-2">Login</button></a>
-                    <a href="/signup"><button class="btn btn-custom">Signup</button></a>
-                </div>
             </div>
+
+            
         </div>
     </nav>
 
-
-    <div class="text-center">
-        <!-- Animated Title -->
-        <div class="text">
-        <h1 class="text-6xl md:text-8xl font-bold text-[#7f7662] tracking-wide animate-pulse">
+    <div class="  text-center">
+        <h1 class="name text-6xl md:text-8xl font-bold text-[#7f7662] tracking-wide animate-pulse">
             Note <span class="text-[#7f7662]">Vault</span>
         </h1>
-    </div>
 
-        <!-- Buttons -->
         <div class="mt-8 flex justify-center space-x-6">
             <a href="/login" class="px-6 py-3 bg-[#EAE0C8] text-[#536878] font-semibold rounded-3xl shadow-lg transition-transform transform hover:scale-110 hover:bg-[#d8c9a7]">Login</a>
             <a href="/signup" class="px-6 py-3 bg-[#EAE0C8] text-[#536878] font-semibold rounded-3xl shadow-lg transition-transform transform hover:scale-110 hover:bg-[#d8c9a7]">Signup</a>
         </div>
     </div>
 
-    
 </body>
+</html>
